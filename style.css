@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(195, 195, 103);
+    padding: 0.5rem;
+    
+}
+nav h1{
+    margin-left: 1rem;
+    color: rgb(54, 3, 3);
+    cursor: pointer;
+}
+nav ul {
+    margin-right: 1rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 3rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+        color: aliceblue;
+}
+#input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    font-size: large;
+    width: auto;
+
+}
+    
+#result {
+    text-transform: uppercase;
+}
+label{
+    margin:10px;
+    padding: 1rem;
+    font-size: x-large;
+}
+#btn{
+    border: none;
+    outline: none;
+    padding: 13px 30px;
+    background: #2b281b;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.loader{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white ;
+    border-top: 2px solid rgb(0, 0, 0) ;
+    animation: spin 1.5s linear infinite;
+    margin-left: 10%;
+
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
